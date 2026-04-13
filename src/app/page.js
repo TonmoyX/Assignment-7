@@ -1,9 +1,11 @@
-import Image from "next/image";
+import HomePage from "@/app/home/page";
 
 export default function Home() {
+
   return (
-    <div>
-     
-    </div>
+    <div className="bg-[#F8FAFC]">
+    <HomePage></HomePage>
+   </div>
+ 
   );
 }

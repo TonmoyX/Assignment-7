@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.pravatar.cc/150?img=1",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "On Track",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Mitchell",
+    "picture": "https://i.pravatar.cc/150?img=2",
+    "email": "sarah.mitchell@gmail.com",
+    "days_since_contact": 31,
+    "status": "Overdue",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager who taught me everything about product design. Catch up over coffee a few times a year.",
+    "goal": 21,
+    "next_due_date": "2025-06-15"
+  },
+  {
+    "id": 3,
+    "name": "David Nguyen",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "david.nguyen@outlook.com",
+    "days_since_contact": 6,
+    "status": "On Track",
+    "tags": ["college", "roommate", "close friend"],
+    "bio": "College roommate for three years. Now lives in Vancouver. We game online every weekend.",
+    "goal": 7,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 4,
+    "name": "Priya Sharma",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "priya.sharma@yahoo.com",
+    "days_since_contact": 18,
+    "status": "Almost Due",
+    "tags": ["neighborhood", "family friend"],
+    "bio": "Grew up on the same street. Our families have been close for over 20 years.",
+    "goal": 21,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 5,
+    "name": "Marcus Thompson",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "marcus.t@protonmail.com",
+    "days_since_contact": 45,
+    "status": "Overdue",
+    "tags": ["gym", "accountability partner"],
+    "bio": "Met at a CrossFit class in 2021. Great motivator and always pushes me to do better.",
+    "goal": 30,
+    "next_due_date": "2025-06-01"
+  },
+  {
+    "id": 6,
+    "name": "Aisha Okonkwo",
+    "picture": "https://i.pravatar.cc/150?img=6",
+    "email": "aisha.okonkwo@gmail.com",
+    "days_since_contact": 3,
+    "status": "On Track",
+    "tags": ["close friend", "travel buddy"],
+    "bio": "Best friend since high school. We plan at least two trips abroad together every year.",
+    "goal": 7,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 7,
+    "name": "Carlos Rivera",
+    "picture": "https://i.pravatar.cc/150?img=7",
+    "email": "carlos.rivera@icloud.com",
+    "days_since_contact": 27,
+    "status": "Almost Due",
+    "tags": ["work", "colleague"],
+    "bio": "Worked together at the same startup for two years. Sharp engineer and a genuinely good person.",
+    "goal": 30,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 8,
+    "name": "Emma Johansson",
+    "picture": "https://i.pravatar.cc/150?img=8",
+    "email": "emma.j@hotmail.com",
+    "days_since_contact": 60,
+    "status": "Overdue",
+    "tags": ["college", "study group"],
+    "bio": "Met in a literature seminar. Now a writer in Stockholm. We exchange book recommendations.",
+    "goal": 30,
+    "next_due_date": "2025-05-25"
+  },
+  {
+    "id": 9,
+    "name": "James Okafor",
+    "picture": "https://i.pravatar.cc/150?img=9",
+    "email": "james.okafor@gmail.com",
+    "days_since_contact": 10,
+    "status": "On Track",
+    "tags": ["close friend", "childhood"],
+    "bio": "Known each other since kindergarten. Somehow still best friends despite living in different cities.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 10,
+    "name": "Lily Chen",
+    "picture": "https://i.pravatar.cc/150?img=10",
+    "email": "lily.chen@gmail.com",
+    "days_since_contact": 19,
+    "status": "Almost Due",
+    "tags": ["book club", "neighbor"],
+    "bio": "Met through our building's book club. Has the most eclectic taste in fiction I've ever seen.",
+    "goal": 21,
+    "next_due_date": "2025-07-17"
+  }
+]
