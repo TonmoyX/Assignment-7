@@ -12,7 +12,7 @@ const Card = ({ data }) => {
                     return (
                         <Link key={fndData.id} href={`/home/${fndData.id}`}>
                         <div>
-                            <div className="card w-[259px] shadow-2xl">
+                            <div className="card w-[259px] shadow-xl">
                                 <figure className="px-10 pt-10">
                                     <Image src={fndData.picture} alt={fndData.name} width={80} height={80} className='rounded-full'></Image>
                                 </figure>
