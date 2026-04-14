@@ -15,9 +15,9 @@ const Footer = () => {
                 <Image src={facebook} alt='facebook' width={30} height={30}></Image>
                 <Image src={x} alt='facebook' width={30} height={30}></Image>
             </div>
-            <div className='flex justify-between text-[#FAFAFA] pt-5 pb-5'>
+            <div className=' text-center md:flex justify-between text-[#FAFAFA] pt-5 pb-5'>
                 <p>© 2026 KeenKeeper. All rights reserved.</p>
-                  <div className='flex gap-6'>
+                  <div className='text-center md:flex gap-6'>
                 <p>Privacy Policy</p>
                 <p>Terms of service</p>
                 <p>Cookies</p>

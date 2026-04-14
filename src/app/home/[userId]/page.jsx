@@ -20,8 +20,8 @@ const UserDetails = async ({ params }) => {
     return (
         <div className='pt-20 bg-[#F8FAFC]'>
             {
-                <div className='container max-w-[1110px] mx-auto grid grid-cols-3 gap-20 pb-20'>
-                    <div className='col-span-1'>
+                <div className='container lg:max-w-[1110px] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-20 pb-20'>
+                    <div className=' md:col-span-2 lg:col-span-1 mx-auto justify-center'>
                         <div className="card w-[350px] shadow-xl">
                             <figure className="px-10 pt-10">
                                 <Image src={user.picture} alt={user.name} width={80} height={80} className='rounded-full'></Image>
@@ -50,8 +50,8 @@ const UserDetails = async ({ params }) => {
                         </div>
                     </div>
 
-                    <div className='col-span-2'>
-                        <div className='grid grid-cols-3 gap-14'>
+                    <div className='md:col-span-2'>
+                        <div className='mx-auto justify-center grid md:grid-cols-3 lg:gap-14'>
                             <div className='card  shadow-xl text-center w-[200px] py-8'>
                                 <h1 className='text-[#244D3F] text-2xl font-bold'>{user.days_since_contact}</h1>
                                 <p className='text-[#64748B] mt-2'>Days Since Count</p>
@@ -66,7 +66,7 @@ const UserDetails = async ({ params }) => {
                             </div>
                         </div>
 
-                        <div className='flex justify-between items-center rounded-xl bg-white  mt-8 pl-6 py-6'>
+                        <div className='lg:flex justify-between items-center rounded-xl bg-white  mt-8 pl-6 py-6'>
                             <div className=''>
                                 <h1 className='text-[#244D3F]'>Relationship Goal</h1>
                                 <h1 className='text-[#64748B] mt-2'>Connect every <span className='text-[#1F2937]'>{user.goal} days</span></h1>
@@ -76,7 +76,7 @@ const UserDetails = async ({ params }) => {
   
                         <div className='mt-8 pl-6 bg-white pb-6'>
                             <h1 className='text-[#244D3F] pt-6'>Quick Check-In</h1>
-                            <div className='mt-6 grid grid-cols-3 gap-4'>
+                            <div className='mt-6 grid mx-auto justify-center space-y-5 md:grid-cols-3 lg:gap-4'>
                                 {/* <div className='btn bg-[#F8FAFC] w-60 py-4 text-center'>
                                 <h1 className='flex mx-auto justify-center'><FiPhoneCall /></h1>
                                 <h1 className='mt-2 text-[#1F2937]'>Call</h1>

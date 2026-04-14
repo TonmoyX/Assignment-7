@@ -21,13 +21,13 @@ const Card = ({ data }) => {
     }
 
     return (
-        <div className='container mx-auto grid grid-cols-4 gap-6 mt-8'>
+        <div className='container mx-auto justify-center grid md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8'>
             {
                 
                 data.map((fndData) => {
                     return (
                         <Link key={fndData.id} href={`/home/${fndData.id}`}>
-                            <div>
+                            <div className='container mx-auto justify-center'>
                                 <div className="card w-[259px] shadow-xl">
                                     <figure className="px-10 pt-10">
                                         <Image src={fndData.picture} alt={fndData.name} width={80} height={80} className='rounded-full' />
