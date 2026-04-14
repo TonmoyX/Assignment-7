@@ -8,6 +8,7 @@ const Card = ({ data }) => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         if (data?.length > 0) {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setLoading(false);
         }
     }, [data, setLoading]);
