@@ -1,8 +1,9 @@
+import CallHandling from '@/Handling/CallHandling';
+import TextHandling from '@/Handling/TextHandling';
+import VideoHandling from '@/Handling/VideoHandling';
 import Image from 'next/image';
 import React from 'react';
-import { FiArchive, FiPhoneCall } from 'react-icons/fi';
-import { HiOutlineVideoCamera } from 'react-icons/hi';
-import { IoMdText } from 'react-icons/io';
+import { FiArchive } from 'react-icons/fi';
 import { MdNotificationsPaused } from 'react-icons/md';
 import { RiDeleteBinLine } from 'react-icons/ri';
 
@@ -15,10 +16,11 @@ const UserDetails = async ({ params }) => {
 
     const user = users.find(user => user.id == userId);
     // console.log(user);
+
     return (
         <div className='pt-20 bg-[#F8FAFC]'>
             {
-                <div className='container max-w-[1110px] mx-auto grid grid-cols-3 gap-20 mb-20'>
+                <div className='container max-w-[1110px] mx-auto grid grid-cols-3 gap-20 pb-20'>
                     <div className='col-span-1'>
                         <div className="card w-[350px] shadow-xl">
                             <figure className="px-10 pt-10">
@@ -43,63 +45,48 @@ const UserDetails = async ({ params }) => {
                                 Archive</h1>
                         </div>
                         <div className='card mt-4 w-[350px] shadow-xl'>
-                            <h1 className='btn bg-white text-[#EF4444] border-none'><RiDeleteBinLine/>
+                            <h1 className='btn bg-white text-[#EF4444] border-none'><RiDeleteBinLine />
                                 Delete</h1>
                         </div>
                     </div>
 
-
                     <div className='col-span-2'>
                         <div className='grid grid-cols-3 gap-14'>
                             <div className='card  shadow-xl text-center w-[200px] py-8'>
-                             <h1 className='text-[#244D3F] text-2xl font-bold'>{user.days_since_contact}</h1>
-                             <p className='text-[#64748B] mt-2'>Days Since Count</p>
+                                <h1 className='text-[#244D3F] text-2xl font-bold'>{user.days_since_contact}</h1>
+                                <p className='text-[#64748B] mt-2'>Days Since Count</p>
                             </div>
                             <div className='card shadow-xl  text-center w-[200px] py-8'>
-                             <h1 className='text-[#244D3F] text-2xl font-bold'>{user.goal}</h1>
-                             <p className='text-[#64748B] mt-2'>Goal (Days)</p>
+                                <h1 className='text-[#244D3F] text-2xl font-bold'>{user.goal}</h1>
+                                <p className='text-[#64748B] mt-2'>Goal (Days)</p>
                             </div>
                             <div className='card shadow-xl text-center w-[200px] py-8'>
-                             <h1 className='text-[#244D3F] text-2xl font-bold'>{user.next_due_date}</h1>
-                             <p className='text-[#64748B] mt-2'>Next Due</p>
+                                <h1 className='text-[#244D3F] text-2xl font-bold'>{user.next_due_date}</h1>
+                                <p className='text-[#64748B] mt-2'>Next Due</p>
                             </div>
-                    </div>
-
-
-
-                    <div className='flex justify-between items-center rounded-xl bg-white  mt-8 pl-6 py-6'>
-                        <div className=''>
-                            <h1 className='text-[#244D3F]'>Relationship Goal</h1>
-                            <h1 className='text-[#64748B] mt-2'>Connect every <span className='text-[#1F2937]'>{user.goal} days</span></h1>
                         </div>
-                        <button  className='btn mr-10 bg-[#F8FAFC] text-[#1F2937] border-none '>Edit</button>
-                    </div>
 
-
-
-                    <div className='mt-8 pl-6 bg-white pb-6'>
-                        <h1 className='text-[#244D3F] pt-6'>Quick Check-In</h1>
-                        <div className='mt-6 grid grid-cols-3 gap-4'>
-                            {/* <div className='btn bg-[#F8FAFC] w-60 py-4 text-center'>
+                        <div className='flex justify-between items-center rounded-xl bg-white  mt-8 pl-6 py-6'>
+                            <div className=''>
+                                <h1 className='text-[#244D3F]'>Relationship Goal</h1>
+                                <h1 className='text-[#64748B] mt-2'>Connect every <span className='text-[#1F2937]'>{user.goal} days</span></h1>
+                            </div>
+                            <button className='btn mr-10 bg-[#F8FAFC] text-[#1F2937] border-none '>Edit</button>
+                        </div>
+  
+                        <div className='mt-8 pl-6 bg-white pb-6'>
+                            <h1 className='text-[#244D3F] pt-6'>Quick Check-In</h1>
+                            <div className='mt-6 grid grid-cols-3 gap-4'>
+                                {/* <div className='btn bg-[#F8FAFC] w-60 py-4 text-center'>
                                 <h1 className='flex mx-auto justify-center'><FiPhoneCall /></h1>
                                 <h1 className='mt-2 text-[#1F2937]'>Call</h1>
                             </div> */}
-
-                            <button className='btn py-15 bg-[#F8FAFC] w-[180px] flex flex-col border-none'>
-                                <span className='text-black text-2xl'><FiPhoneCall /></span>
-                                <h1 className='mt-2 text-[#1F2937]'>Call</h1>
-                            </button>
-                            <button className='btn py-15 bg-[#F8FAFC] w-[180px] flex flex-col border-none'>
-                                <span className='text-black text-2xl'><IoMdText /></span>
-                                <h1 className='mt-2 text-[#1F2937]'>Text</h1>
-                            </button>
-                            <button className='btn py-15 bg-[#F8FAFC] w-[180px] flex flex-col border-none'>
-                                <span className='text-black text-2xl'><HiOutlineVideoCamera /></span>
-                                <h1 className='mt-2 text-[#1F2937]'>Video</h1>
-                            </button>
+                                <CallHandling user={user}></CallHandling>
+                                <TextHandling user={user}></TextHandling>
+                                <VideoHandling user={user}></VideoHandling>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             }
         </div>

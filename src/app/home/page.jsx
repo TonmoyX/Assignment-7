@@ -1,6 +1,5 @@
 import AllCard from '@/ui/allCard';
 import React from 'react';
-
 const HomePage = () => {
     return (
         <div className='bg-[#F8FAFC] pb-20'>

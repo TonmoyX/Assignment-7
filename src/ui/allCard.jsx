@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './card';
-
 const AllCard = async () => {
     const friendPromise = await fetch('http://localhost:3000/data.json')
     const data = await friendPromise.json()
@@ -25,8 +24,6 @@ const AllCard = async () => {
                     <h1 className='text-[#64748B]'>Interactions This Month</h1>
                 </div>
             </div>
-
-
             <h1 className='text-3xl font-bold'>Your Friends</h1>
             <Card data = {data}></Card>
         </div>
