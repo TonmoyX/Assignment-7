@@ -2,11 +2,13 @@
 import { UserContext } from '@/UserContextProvider';
 import React, { useContext } from 'react';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
+import { toast } from 'react-toastify';
 
 const VideoHandling = ({user}) => {
     const {fndDataVdo, setFndDataVdo} = useContext(UserContext);
     const handleVideoNow = () => {
         setFndDataVdo([...fndDataVdo, user])
+        toast.success(`Video call with ${user.name}`)
     }
     return (
         <button onClick={handleVideoNow} className='btn py-15 bg-[#F8FAFC] w-[180px] flex flex-col border-none'>
