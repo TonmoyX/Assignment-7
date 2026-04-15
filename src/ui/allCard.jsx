@@ -25,7 +25,7 @@ const AllCard = async () => {
                 </div>
             </div>
             <h1 className='text-3xl font-bold'>Your Friends</h1>
-            <Card data = {data}></Card>
+            <Card data={data}></Card>
         </div>
     );
 };

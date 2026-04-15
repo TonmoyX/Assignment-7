@@ -30,13 +30,13 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            { link  }
+                            {link}
                         </ul>
                     </div>
                     <a className="font-bold text-2xl">Keen<span className='text-[#244D3F]'>Keeper</span></a>
                 </div>
                 <div className="navbar-end hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 gap-6">
+                    <ul className="menu menu-horizontal px-1 gap-3">
                         {link}
                     </ul>
                 </div>

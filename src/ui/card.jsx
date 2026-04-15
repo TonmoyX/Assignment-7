@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { RiseLoader } from 'react-spinners';
 
 const Card = ({ data }) => {
     const [loading, setLoading] = useState(true);
@@ -14,17 +13,17 @@ const Card = ({ data }) => {
     }, [data, setLoading]);
 
     if (loading) {
-       return (
-        <div className='flex justify-center items-center h-64'>
-            <p className='text-gray-500 text-xl'><RiseLoader /></p>
-        </div>
-       )
+        return (
+            <div className='flex justify-center items-center h-64'>
+                <p className='text-gray-500 text-xl'><span className="loading loading-infinity loading-xl"></span></p>
+            </div>
+        )
     }
 
     return (
         <div className='container mx-auto justify-center grid md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8'>
             {
-                
+
                 data.map((fndData) => {
                     return (
                         <Link key={fndData.id} href={`/home/${fndData.id}`}>

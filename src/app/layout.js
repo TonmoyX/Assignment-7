@@ -28,12 +28,12 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Providers>
-        <Navbar></Navbar>
-        {children}
-        <ToastContainer />
-        <Footer></Footer>
+          <Navbar></Navbar>
+          {children}
+          <ToastContainer />
+          <Footer></Footer>
         </Providers>
-        </body>
+      </body>
     </html>
   );
 }

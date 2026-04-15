@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 const CallHandling = ({ user }) => {
 
-     const {fndData, setFndData} = useContext(UserContext);
+    const { fndData, setFndData } = useContext(UserContext);
     //  console.log(fndData, 'data in call handling')
 
     const handleCallNow = () => {
@@ -20,7 +20,7 @@ const CallHandling = ({ user }) => {
         <button onClick={handleCallNow} className='btn py-15 bg-[#F8FAFC] w-[180px] flex flex-col border-none'>
             <span className='text-black text-2xl'><FiPhoneCall /></span>
             <h1 className='mt-2 text-[#1F2937]'>Call</h1>
-        </button>         
+        </button>
     );
 };
 

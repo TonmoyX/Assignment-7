@@ -4,8 +4,8 @@ import React, { useContext } from 'react';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
 import { toast } from 'react-toastify';
 
-const VideoHandling = ({user}) => {
-    const {fndDataVdo, setFndDataVdo} = useContext(UserContext);
+const VideoHandling = ({ user }) => {
+    const { fndDataVdo, setFndDataVdo } = useContext(UserContext);
     const handleVideoNow = () => {
         setFndDataVdo([...fndDataVdo, user])
         toast.success(`Video call with ${user.name}`)

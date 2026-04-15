@@ -73,7 +73,7 @@ const UserDetails = async ({ params }) => {
                             </div>
                             <button className='btn mr-10 bg-[#F8FAFC] text-[#1F2937] border-none '>Edit</button>
                         </div>
-  
+
                         <div className='mt-8 pl-6 bg-white pb-6'>
                             <h1 className='text-[#244D3F] pt-6'>Quick Check-In</h1>
                             <div className='mt-6 grid mx-auto justify-center space-y-5 md:grid-cols-3 lg:gap-4'>
