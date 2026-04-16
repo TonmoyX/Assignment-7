@@ -10,7 +10,7 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 const UserDetails = async ({ params }) => {
     const { userId } = await params;
     // console.log(userId)
-    const promise = await fetch('http://localhost:3000/data.json');
+    const promise = await fetch('http://keenkeeper-dun.vercel.app/data.json');
     const users = await promise.json();
     // console.log(users)
 

@@ -12,10 +12,6 @@ const StatsPage = () => {
         { name: 'Text', value: fndDataText.length, fill: '#00C49F' },
         { name: 'Video Call', value: fndDataVdo.length, fill: '#FFBB28' },
     ];
-
-
-
-
     return (
         <div className='lg:max-w-[1100px] flex flex-col mx-auto justify-center'>
             <h1 className='text-3xl text-[#1F2937] font-bold mb-4 mt-5'>Friendship Analytics</h1>
