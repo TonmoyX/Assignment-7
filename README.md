@@ -13,9 +13,10 @@ Technologies I used
 
 Ans: 
 1. HTML5
-2. Tailwind CSS
+2. Tailwind CSS + DaisyUi
 3. React
 4. Next JS
+5. Recharts
 
 
 3 key features of my project

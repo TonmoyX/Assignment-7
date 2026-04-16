@@ -35,7 +35,7 @@ const Card = ({ data }) => {
                                     <div className="card-body items-center text-center">
                                         <h2 className="card-title">{fndData.name}</h2>
                                         <p className='text-[#64748B]'>{fndData.days_since_contact}d ago</p>
-                                        <div className='flex gap-4'>
+                                        <div className='flex gap-2'>
                                             {fndData.tags.slice(0, 2).map((fndTag, ind) => (
                                                 <p key={ind} className='flex gap-1 bg-[#CBFADB] rounded-full px-2'>{fndTag}</p>
                                             ))}

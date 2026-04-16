@@ -9,9 +9,11 @@ import { BiError } from 'react-icons/bi';
 import CallData from './call';
 const TimelinePage = () => {
     const { fndData, setFndData } = useContext(UserContext);
-    console.log(fndData, setFndData, 'data in timeline page')
+    const { fndDataText, setFndDataText } = useContext(UserContext);
+    const { fndDataVdo, setFndDataVdo } = useContext(UserContext);
+    // console.log(fndData, setFndData, 'data in timeline page')
     const [isActive, setIsActive] = useState('call');
-    if (fndData.length === 0) {
+    if (fndData.length === 0 && fndDataText.length === 0 && fndDataVdo.length === 0) {
         return (
             <div className='max-w-[1100px] mx-auto mt-8 pb-35'>
                 <h1 className='text-2xl font-bold mb-5'>Timeline </h1>
@@ -20,7 +22,6 @@ const TimelinePage = () => {
             </div>
         );
     }
-    // Filter timeline ⬇️
     return (
         <div className='lg:max-w-[1100px] mx-auto mt-8'>
             <h1 className='text-2xl font-bold mb-5'>Timeline </h1>
