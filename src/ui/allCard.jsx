@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from './card';
 const AllCard = async () => {
-    const friendPromise = await fetch('http://keenkeeper-dun.vercel.app/data.json');
+    // const friendPromise = await fetch('http://keenkeeper-dun.vercel.app/data.json');
+    const friendPromise = await fetch('http://localhost:3000/data.json');
     const data = await friendPromise.json()
     return (
         <div className='mt-10 lg:max-w-[1100px] container mx-auto'>
